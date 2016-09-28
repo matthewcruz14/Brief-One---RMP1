@@ -1,35 +1,26 @@
+Circle[]  allOfTheCircles;
+
+
 void setup() {
   
   size(400,400);
-  background(122);
+  background(0);
+  
+  allOfTheCircles = new Circle[20];
+  
+  for (int index=0; index<20; index++) {
+    allOfTheCircles[index] = new Circle();
+  }
+    
+  
   
 }
 
 void draw() {
   background(122);
-  fill(0, 0, 25);
-  ellipse(50, 50, 50, 50);
-  ellipse(100, 100, 50, 50);
-  fill(0, 30, 0);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  ellipse(150, 150, 50, 50);
-  
-  
+
+  for (int index=0; index<20; index++) {
+    allOfTheCircles[index].paint();
+  }
    
 }
