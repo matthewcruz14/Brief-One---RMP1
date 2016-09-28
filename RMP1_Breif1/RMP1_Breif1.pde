@@ -24,3 +24,31 @@ void draw() {
   }
    
 }
+void keyPressed() {
+  if (key == CODED); {
+    if (keyCode == UP) {
+      for (int index=0; index<20; index++) {
+        allOfTheCircles[index].moveUp();
+      }
+    }
+    if (keyCode == DOWN) {
+      for (int index=0; index<20; index++) {
+        allOfTheCircles[index].moveDown();
+      }
+    }
+    if (keyCode == LEFT) {
+      for (int index=0; index<20; index++) {
+        allOfTheCircles[index].moveLeft();
+      }
+    }
+    if (keyCode == RIGHT) {
+      for (int index=0; index<20; index++) {
+        allOfTheCircles[index].moveRight();
+      }
+    }
+  }
+}
+
+
+  
+  

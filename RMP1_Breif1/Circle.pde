@@ -10,7 +10,7 @@ class Circle {
 
 Circle() {
     xPos = random(25,375);
-    yPos = random(25,275);
+    yPos = random(25,375);
     handw = random(10,50); 
     cRed = (int)random(255);
     cGreen = (int)random(255);
@@ -20,5 +20,17 @@ Circle() {
 void paint() {
   fill (cRed, cGreen, cBlue);
   ellipse (xPos, yPos, handw, handw);
+ }
+ void moveUp() {
+   yPos --;
+ }
+ void moveDown() {
+   yPos ++;
+ }
+ void moveLeft() {
+   xPos --;
+ }
+ void moveRight() {
+   xPos ++;
  }
 }
